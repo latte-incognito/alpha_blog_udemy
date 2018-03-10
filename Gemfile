@@ -47,7 +47,8 @@ group :development do
 end
 
 group :production do
-  gem 'pg'
+  #0.11 is to fix an issu
+  gem 'pg', '~> 0.11'
   #not required for Rails 5 and above
   gem 'rails_12factor' 
 end
